@@ -1,0 +1,177 @@
+html {
+    margin: 0;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #65737e;
+  }
+  
+  .main {
+    z-index: 2;
+    position: absolut;
+    height: 100%;
+    font-family: Bradley Hand, cursive;
+    
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .blocking {
+    z-index: 9;
+    position: fixed;
+    background-color: rgb(0,0,0, 0.7);
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  #noteFrame {
+    position: fixed;
+    z-index: 10;
+    top: -100px;
+  
+    background-color: white;
+    width: 600px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 7px;
+  
+    display: flex;
+    align-items: streach;
+    
+    transition: all 400ms;
+      -webkit-transition: 400ms;
+      -moz-transition: 400ms;
+  }
+  
+  #noteFrame.active {
+    top: 20vh;
+  }
+  
+  .noteText {
+    font-family: Bradley Hand, cursive;
+    font-size: 1.1em;
+    border-style: none;
+    outline: none;
+    padding: 0 10px;
+    flex: 6;
+  }
+  
+  .top-bar {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255, 0.6);
+    height: 50px;
+    width: 100%;
+  }
+  
+  .top-bar h1 {
+    color: white;
+    font-family: monospace;
+    font-size: 1.7em;
+    position: inherit;
+    left: 25px;
+  }
+  
+  #add-btn {
+    position: inherit;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    right: 5px;
+    height: inherit;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-style: none;
+    outline: none;
+  }
+  
+  #add-btn:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+  }
+  
+  #add-btn:active {
+    color: grey;
+  }
+  
+  .container {
+    z-index: 6;
+    background: inherit;
+    padding-top: 50px;
+    margin: auto;
+    width: 80%;
+  }
+  
+  .crossOut {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
+  .note {
+    z-index: 5;
+    position: relative;
+    margin: 5px auto;
+    padding: 0 5px 0 20px;
+    display: flex;
+    flex-flow: row wrap;
+    
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .note p {
+    flex: 10;
+  }
+  
+  .btn {
+    outline: none;
+    min-height: 55px;
+    background-color: inherit;
+    border-style: none;
+    height: 100%;
+    flex: 1;
+  }
+  
+  .btn:hover {
+    font-weight: bold;
+    background-color: inherit;
+    background-color: rgb(0, 0, 0, 0.2);
+  }
+  
+  .container p {
+    padding: 0 15px;
+  }
+  
+  div.editor {
+    position: relative;
+    z-index: 4;
+    margin: -10px auto 10px auto;
+    width: 80%;
+    margin-top: -10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+    background-color: rgb(134, 143, 143);
+    padding-top: 5px;
+  
+  }
+  
+  .editor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5px 0 15px;
+    justify-content: center;
+    flex: 1;
+  
+  }
+  
+  .editor input {      
+    padding: 2px 10px;
+    flex: 10;
+  }
+  
+  .editor button {
+    flex: 1;
+  }

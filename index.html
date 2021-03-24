@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>My to do list</title>
+</head>
+<body>
+    <div class="main">
+
+        <div class="top-bar">
+        <h1>myToDoList</h1>
+        <button id="add-btn" onclick="noteFrameHide()">New task</button>
+        </div>
+      <!--  Add new note frame    -->
+          <div id="noteFrame">
+            <input 
+            id="NoteTextAdd" 
+            type="text" 
+            class="noteText" 
+            maxlength="130" 
+            placeholder="Maximum note length 130 characters." 
+            autofocus
+            ></input>
+            <button class="btn" type="submit" onclick="addTask()">Add</button>
+            <button class="btn" onclick="noteFrameHide()">Cancel</button>
+          </div>
+      
+        <div class="container">    
+      <!-- Note will be added here -->
+        </div>  
+          
+       <div id="blocking">
+               <div> 
+        
+        </div>
+        <script src="/main.js"></script>
+</body>
+</html>
